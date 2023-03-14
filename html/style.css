@@ -292,4 +292,45 @@ h2{
       bottom: 100%;
     }
   }
+
+.contact-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-info h3{
+  padding-top: 20px;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.contact-info ul{
+  list-style: none;
+  padding: 5px 0;
+  font-size: 1em;
+}
+
+.contact-info li{
+  padding: 5px 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color:aquamarine;
+}
+
+.contact-info a:hover{
+  color: white;
+}
+
+.contact-info .icons{
+  font-size: 2em;
+}
+
+.contact-info i{
+  padding: 0 10px;
+}
   
