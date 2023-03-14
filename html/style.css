@@ -86,6 +86,9 @@ h2{
     color: white;
 }
 
+.right .icons a{
+  color:white;
+}
 
 .right .icons a:hover{
   color:aquamarine;
