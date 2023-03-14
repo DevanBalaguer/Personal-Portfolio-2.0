@@ -135,7 +135,7 @@ h2{
     align-items: center;
     position: absolute;
     flex-direction: column;
-    width: 400px;
+    width: 500px;
     padding: 40px;
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
@@ -157,7 +157,7 @@ h2{
   .login-box .user-box input {
     width: 100%;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 1.2em;
     color: #fff;
     margin-bottom: 30px;
     border: none;
@@ -170,11 +170,15 @@ h2{
     position: absolute;
     top:0;
     left: 0;
-    padding: 10px 0;
-    font-size: 16px;
+    padding: 5px 0;
+    font-size: 1.2em;
     color: #fff;
     pointer-events: none;
     transition: .5s;
+  }
+
+  .login-box .user-box textarea{
+    margin-top: 12px;
   }
   
   .login-box .user-box input:focus ~ label,
@@ -182,7 +186,7 @@ h2{
     top: -20px;
     left: 0;
     color: #03e9f4;
-    font-size: 12px;
+    font-size: 1em;
   }
   
   .login-box form a {
@@ -190,13 +194,13 @@ h2{
     display: inline-block;
     padding: 10px 20px;
     color: #03e9f4;
-    font-size: 16px;
+    font-size: 1.2em;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    letter-spacing: 4px
+    letter-spacing: 4px;
   }
   
   .login-box a:hover {
