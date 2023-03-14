@@ -33,6 +33,8 @@ nav a:hover{
     color:aquamarine;
 }
 
+  /* about*/
+
 #about{
     padding-top: 8em;
     display: flex;
@@ -49,8 +51,8 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     padding-right: 5em;
-    text-align:justify;
-    width: 50vw;
+    text-align:left;
+    width: 30vw;
 }
 
 .icons{
@@ -82,6 +84,11 @@ h1{
 h2{
     font-size: 1.5em;
     color: white;
+}
+
+
+.right .icons a:hover{
+  color:aquamarine;
 }
 
 .parallax-image {
@@ -120,6 +127,7 @@ h2{
     justify-content: center;
 }
 
+  /* Contact*/
 #contact{
     display: flex;
     justify-content: center;
@@ -293,6 +301,7 @@ h2{
     }
   }
 
+  /* footer*/
 .contact-info{
   display: flex;
   justify-content: center;
