@@ -1,6 +1,6 @@
 html{
     font-size:16px;
-    color: white
+    color: white;
 }
 
 body{
@@ -33,6 +33,8 @@ nav a:hover{
     color:aquamarine;
 }
 
+  /* about*/
+
 #about{
     padding-top: 8em;
     display: flex;
@@ -49,8 +51,8 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     padding-right: 5em;
-    text-align:justify;
-    width: 50vw;
+    text-align:left;
+    width: 30vw;
 }
 
 .icons{
@@ -84,6 +86,14 @@ h2{
     color: white;
 }
 
+.right .icons a{
+  color:white;
+}
+
+.right .icons a:hover{
+  color:aquamarine;
+}
+
 .parallax-image {
     background-image: url("https://i.pinimg.com/736x/27/2d/80/272d80e97e0405abcae98443688b79b0.jpg");
     background-attachment: fixed;
@@ -106,6 +116,7 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 .parallax-image3 {
@@ -120,6 +131,70 @@ h2{
     justify-content: center;
 }
 
+/* Projects*/
+#projects{
+  background: linear-gradient(black 10%, 30%, aquamarine 90%, black);
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+#projects h2{
+  padding-left: 1em;
+}
+
+.phones{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  width: 75vw;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.smartphone {
+  position: relative;
+  width: 12.5em;
+  height: 24em;
+  margin: auto;
+  border: 10px black solid;
+  border-top-width: 30px;
+  border-bottom-width: 52px;
+  border-radius: 20px;
+  
+}
+
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width:12.5em;
+  height: 25.5em;
+  background: white;
+  overflow: scroll;
+
+}
+.content img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  /* Contact*/
 #contact{
     display: flex;
     justify-content: center;
@@ -185,7 +260,7 @@ h2{
   .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color: #03e9f4;
+    color: aquamarine;
     font-size: 1em;
   }
   
@@ -193,7 +268,7 @@ h2{
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #03e9f4;
+    color: aquamarine;
     font-size: 1.2em;
     text-decoration: none;
     text-transform: uppercase;
@@ -204,13 +279,13 @@ h2{
   }
   
   .login-box a:hover {
-    background: #03e9f4;
+    background: aquamarine;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    box-shadow: 0 0 5px aquamarine,
+                0 0 25px aquamarine,
+                0 0 50px aquamarine,
+                0 0 100px aquamarine;
   }
   
   .login-box a span {
@@ -223,7 +298,7 @@ h2{
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
+    background: linear-gradient(90deg, transparent, aquamarine);
     animation: btn-anim1 1s linear infinite;
   }
   
@@ -241,7 +316,7 @@ h2{
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
+    background: linear-gradient(180deg, transparent, aquamarine);
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
   }
@@ -260,7 +335,7 @@ h2{
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
+    background: linear-gradient(270deg, transparent, aquamarine);
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
   }
@@ -279,7 +354,7 @@ h2{
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
+    background: linear-gradient(360deg, transparent, aquamarine);
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
   }
@@ -292,4 +367,46 @@ h2{
       bottom: 100%;
     }
   }
+
+  /* footer*/
+.contact-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-info h3{
+  padding-top: 20px;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.contact-info ul{
+  list-style: none;
+  padding: 5px 0;
+  font-size: 1em;
+}
+
+.contact-info li{
+  padding: 5px 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color:aquamarine;
+}
+
+.contact-info a:hover{
+  color: white;
+}
+
+.contact-info .icons{
+  font-size: 2em;
+}
+
+.contact-info i{
+  padding: 0 10px;
+}
   
