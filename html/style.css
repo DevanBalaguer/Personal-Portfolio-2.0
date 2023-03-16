@@ -1,89 +1,97 @@
 html{
-    font-size:16px;
-    color: white;
+  font-size:16px;
+  color: white;
 }
 
 body{
-    background-color: black;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin: 0;
+  background-color: black;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
 }
 
 nav ul{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
 }
 
 nav li{
-    list-style-type: none;
+  list-style-type: none;
 }
 
 nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
 }
 
 nav a:hover{
-    color:aquamarine;
+  color:aquamarine;
 }
 
-  /* about*/
+/* about*/
 
 #about{
-    padding-top: 8em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 5em;
-    padding-bottom: 8em;
-    padding-left: 1em;
+  padding-top: 8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5em;
+  padding-bottom: 8em;
+  padding-left: 1em;
 }
 
 
 .right{
-    display: flex;
-    flex-direction: column;
-    padding-right: 5em;
-    text-align:left;
-    width: 30vw;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5em;
+  text-align:left;
+  width: 30vw;
 }
 
 .icons{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 3em;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3em;
 }
 
 .box{
-    height: auto;
-    width: 50vw;
-    position: relative;
-    text-align: center;
+  height: auto;
+  width: 50vw;
+  position: relative;
+  text-align: center;
 }
 
 .box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 h1{
-    font-size: 3em;
-    color: white;
+  font-size: 3em;
+  color: white;
 }
 
 h2{
-    font-size: 1.5em;
-    color: white;
+  font-size: 1.5em;
+  color: white;
+}
+
+.right .icons a{
+color:white;
+}
+
+.right .icons a:hover{
+color:aquamarine;
 }
 
 .right .icons a{
@@ -95,277 +103,292 @@ h2{
 }
 
 .parallax-image {
-    background-image: url("https://i.pinimg.com/736x/27/2d/80/272d80e97e0405abcae98443688b79b0.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-image: url("https://i.pinimg.com/736x/27/2d/80/272d80e97e0405abcae98443688b79b0.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .parallax-image2 {
-    background-image: url("https://images.unsplash.com/photo-1519638399535-1b036603ac77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWV8ZW58MHx8MHx8&w=1000&q=80");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+  background-image: url("https://images.unsplash.com/photo-1519638399535-1b036603ac77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWV8ZW58MHx8MHx8&w=1000&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .parallax-image3 {
-    background-image: url("https://a-static.besthdwallpaper.com/anime-sunrise-background-art-wallpaper-2048x1536-94301_26.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-image: url("https://a-static.besthdwallpaper.com/anime-sunrise-background-art-wallpaper-2048x1536-94301_26.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Projects*/
 #projects{
-  background: linear-gradient(black 10%, 30%, aquamarine 90%, black);
-  display: flex;
-  flex-flow:row wrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10em;
-  padding-bottom: 10em;
+background: linear-gradient(black 10%, 30%, aquamarine 90%, black);
+display: flex;
+flex-flow:row wrap;
+justify-content: center;
+align-items: center;
+padding-top: 10em;
+padding-bottom: 10em;
 }
 
 #projects h2{
-  padding-left: 1em;
+padding-left: 1em;
+font-size: 4em;
+padding-right: 1em;
+text-shadow: 2px 2px 4px black;
 }
 
 .phones{
-  display: flex;
-  flex-direction: row;
-  column-gap: 10px;
-  width: 75vw;
-  flex-wrap: wrap;
-  row-gap: 10px;
+display: flex;
+flex-flow: row wrap;
+column-gap: 10px;
+width: 75vw;
+row-gap: 10px;
 }
 
 .smartphone {
-  position: relative;
-  width: 12.5em;
-  height: 24em;
-  margin: auto;
-  border: 10px black solid;
-  border-top-width: 30px;
-  border-bottom-width: 52px;
-  border-radius: 20px;
-  
+position: relative;
+width: 12.5em;
+height: 24em;
+margin: auto;
+border: 10px black solid;
+border-top-width: 30px;
+border-bottom-width: 52px;
+border-radius: 20px;
+box-shadow: 15px 20px 20px -4px black
+
 }
 
 .smartphone:before {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 5px;
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #333;
-  border-radius: 10px;
+content: '';
+display: block;
+width: 60px;
+height: 5px;
+position: absolute;
+top: -15px;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #333;
+border-radius: 10px;
+}
+
+.p2{
+  transform:  translate(0, 50px);
+}
+
+.p3{
+  transform:  translate(0, -50px);
+}
+
+.p5{
+transform:  translate(0, 50px);
+}
+
+.p6{
+transform:  translate(0, -50px);
 }
 
 /* The screen (or content) of the device */
-.smartphone .content {
-  width:12.5em;
-  height: 25.5em;
-  background: white;
-  overflow: scroll;
 
-}
-.content img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.phone-screen{
+width: 12.5em;
+height: 25.5em;
 }
 
-  /* Contact*/
+.content {
+object-fit: cover;
+overflow: auto;
+}
+
+/* Contact*/
 #contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(#141e30, #243b55);
-    height: 45rem;
-  }
-  
-  .login-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    flex-direction: column;
-    width: 500px;
-    padding: 40px;
-    background: rgba(0,0,0,.5);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
-  }
-  
-  .login-box h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .login-box .user-box {
-    position: relative;
-  }
-  
-  .login-box .user-box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 1.2em;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-  }
-   
-  .login-box .user-box label {
-    position: absolute;
-    top:0;
-    left: 0;
-    padding: 5px 0;
-    font-size: 1.2em;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#141e30, #243b55);
+  height: 45rem;
+}
 
-  .login-box .user-box textarea{
-    margin-top: 12px;
-  }
-  
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
-    top: -20px;
-    left: 0;
-    color: aquamarine;
-    font-size: 1em;
-  }
-  
-  .login-box form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: aquamarine;
-    font-size: 1.2em;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px;
-  }
-  
-  .login-box a:hover {
-    background: aquamarine;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px aquamarine,
-                0 0 25px aquamarine,
-                0 0 50px aquamarine,
-                0 0 100px aquamarine;
-  }
-  
-  .login-box a span {
-    position: absolute;
-    display: block;
-  }
-  
-  .login-box a span:nth-child(1) {
-    top: 0;
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  width: 500px;
+  padding: 40px;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+ 
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 5px 0;
+  font-size: 1.2em;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box textarea{
+  margin-top: 12px;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: aquamarine;
+  font-size: 1em;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: aquamarine;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.login-box a:hover {
+  background: aquamarine;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px aquamarine,
+              0 0 25px aquamarine,
+              0 0 50px aquamarine,
+              0 0 100px aquamarine;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, aquamarine);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
     left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, aquamarine);
-    animation: btn-anim1 1s linear infinite;
   }
-  
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-    50%,100% {
-      left: 100%;
-    }
+  50%,100% {
+    left: 100%;
   }
-  
-  .login-box a span:nth-child(2) {
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, aquamarine);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
     top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, aquamarine);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
   }
-  
-  @keyframes btn-anim2 {
-    0% {
-      top: -100%;
-    }
-    50%,100% {
-      top: 100%;
-    }
+  50%,100% {
+    top: 100%;
   }
-  
-  .login-box a span:nth-child(3) {
-    bottom: 0;
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, aquamarine);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
     right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, aquamarine);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
   }
-  
-  @keyframes btn-anim3 {
-    0% {
-      right: -100%;
-    }
-    50%,100% {
-      right: 100%;
-    }
+  50%,100% {
+    right: 100%;
   }
-  
-  .login-box a span:nth-child(4) {
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, aquamarine);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
     bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, aquamarine);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
   }
-  
-  @keyframes btn-anim4 {
-    0% {
-      bottom: -100%;
-    }
-    50%,100% {
-      bottom: 100%;
-    }
+  50%,100% {
+    bottom: 100%;
   }
 
   /* footer*/
@@ -409,4 +432,3 @@ h2{
 .contact-info i{
   padding: 0 10px;
 }
-  
