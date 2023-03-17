@@ -1,3 +1,8 @@
+:root{
+  --accentColor: rgb(255, 200, 127);
+}
+
+
 html{
   font-size:16px;
   color: white;
@@ -10,6 +15,22 @@ body{
   padding-top: 1em;
   padding-bottom: 1em;
   margin: 0;
+}
+
+h1{
+  font-size: 5.5em;
+}
+
+h2{
+  font-size: 4em;
+}
+
+h3{
+  font-size: 3em;
+}
+
+p{
+  font-size: 2em;
 }
 
 nav ul{
@@ -30,7 +51,7 @@ nav a{
 }
 
 nav a:hover{
-  color:aquamarine;
+  color:Var(--accentColor);
 }
 
 /* about*/
@@ -76,22 +97,12 @@ nav a:hover{
   object-fit: cover;
 }
 
-h1{
-  font-size: 3em;
-  color: white;
-}
-
-h2{
-  font-size: 1.5em;
-  color: white;
-}
-
 .right .icons a{
 color:white;
 }
 
 .right .icons a:hover{
-color:aquamarine;
+color:Var(--accentColor);
 }
 
 .parallax-image {
@@ -99,7 +110,7 @@ color:aquamarine;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +122,7 @@ color:aquamarine;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,41 +131,44 @@ color:aquamarine;
 }
 
 .parallax-image3 {
-  background-image: url("https://a-static.besthdwallpaper.com/anime-sunrise-background-art-wallpaper-2048x1536-94301_26.jpg");
+  background-image: url("https://www.bhmpics.com/downloads/anime-apartment-Wallpapers/8.1027828.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* Projects*/
+/*PROJECTS*/
+
 #projects{
-background: linear-gradient(black 10%, 30%, aquamarine 90%, black);
+background: linear-gradient(black 10%, 30%, rgba(255, 146, 127, 0.644) 50%, black);
 display: flex;
 flex-flow:row wrap;
 justify-content: center;
 align-items: center;
-padding-top: 10em;
-padding-bottom: 10em;
+padding-top: 25em;
+padding-bottom: 25em;
 }
 
 #projects h2{
-padding-left: 1em;
-font-size: 4em;
-padding-right: 1em;
+padding: 1em 1em;
 text-shadow: 2px 2px 4px black;
 }
 
-.phones{
+.phones {
 display: flex;
 flex-flow: row wrap;
 column-gap: 10px;
 width: 75vw;
-row-gap: 10px;
+row-gap: 20px;
+}
+
+#projects a{
+ padding-left: .7em;
 }
 
 .smartphone {
@@ -216,6 +230,90 @@ width: 12.5em;
 height: auto;
 }
 
+/*FUTURE*/
+
+#future{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15em;
+  flex-flow: column wrap;
+}
+
+.box2 {
+  flex: 1 1 25%;
+  margin: 50px 10px 10px 25px;
+  position: relative;
+}
+
+#future p{
+  flex: 1 1 25%;
+  margin: 50px 10px 10px 25px;
+  position: relative;
+  width: 20em;
+  height: 29em;
+  font-size: 2em;
+  line-height: 1.4;
+}
+
+.overlay {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  height: 34em;
+  z-index: 98;
+  background: url("https://images.pond5.com/red-curtain-animation-background-025751132_prevstill.jpeg");
+}
+
+.ovrl-left {
+  width: 25em;
+  left: 50%;
+  box-shadow: 9px 0px 19px 0px rgba(105, 109, 122, 1);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.8);
+}
+
+.ovrl-right {
+  width: 25em;
+  right: 50%;
+  box-shadow: -9px 0px 19px 0px rgba(105, 109, 122, 1);
+}
+
+.move-right {
+animation-name: myRight;
+animation-duration: 1.3s;
+animation-fill-mode: forwards;
+}
+
+.move-left {
+animation-name: myLeft;
+animation-duration: 1.3s;
+animation-fill-mode: forwards;
+}
+
+@keyframes myRight {
+  0% {
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: 80%;
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes myLeft {
+  0% {
+    right: 50%;
+    opacity: 1;
+  }
+  100% {
+    right: 80%;
+    opacity: 0;
+    display: none;
+  }
+}
+
 
 /* Contact*/
 #contact{
@@ -223,8 +321,10 @@ height: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(#141e30, #243b55);
+  background: linear-gradient(#301714, #552424);
   height: 45rem;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .login-box {
@@ -283,7 +383,7 @@ height: auto;
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: aquamarine;
+  color: Var(--accentColor);
   font-size: 1em;
 }
 
@@ -291,7 +391,7 @@ height: auto;
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: aquamarine;
+  color: Var(--accentColor);
   font-size: 1.2em;
   text-decoration: none;
   text-transform: uppercase;
@@ -302,13 +402,13 @@ height: auto;
 }
 
 .login-box a:hover {
-  background: aquamarine;
+  background: Var(--accentColor);
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px aquamarine,
-              0 0 25px aquamarine,
-              0 0 50px aquamarine,
-              0 0 100px aquamarine;
+  box-shadow: 0 0 5px Var(--accentColor),
+              0 0 25px Var(--accentColor),
+              0 0 50px Var(--accentColor),
+              0 0 100px Var(--accentColor);
 }
 
 .login-box a span {
@@ -321,7 +421,7 @@ height: auto;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, aquamarine);
+  background: linear-gradient(90deg, transparent, Var(--accentColor));
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -339,7 +439,7 @@ height: auto;
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, aquamarine);
+  background: linear-gradient(180deg, transparent, Var(--accentColor));
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -358,7 +458,7 @@ height: auto;
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, aquamarine);
+  background: linear-gradient(270deg, transparent, Var(--accentColor));
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -377,7 +477,7 @@ height: auto;
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, aquamarine);
+  background: linear-gradient(360deg, transparent, Var(--accentColor));
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }
@@ -418,7 +518,7 @@ padding: 5px 0;
 
 .contact-info a {
 text-decoration: none;
-color:aquamarine;
+color:Var(--accentColor);
 }
 
 .contact-info a:hover{
