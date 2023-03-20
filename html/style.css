@@ -33,6 +33,18 @@ p{
   font-size: 2em;
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
 nav ul{
   display: flex;
   flex-direction: row;
@@ -86,7 +98,7 @@ nav a:hover{
 
 .box{
   height: auto;
-  width: 50vw;
+  width: 40vw;
   position: relative;
   text-align: center;
 }
@@ -150,12 +162,11 @@ display: flex;
 flex-flow:row wrap;
 justify-content: center;
 align-items: center;
-padding-top: 25em;
-padding-bottom: 25em;
+padding-top: 5em;
+padding-bottom: 10em;
 }
 
 #projects h2{
-padding: 1em 1em;
 text-shadow: 2px 2px 4px black;
 }
 
@@ -236,24 +247,30 @@ height: auto;
   display:flex;
   align-items: center;
   justify-content: center;
-  padding-top: 15em;
+  padding-top: 8em;
   flex-flow: column wrap;
+  padding-bottom: 48em;
+}
+
+#future h2, h3{
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .box2 {
-  flex: 1 1 25%;
-  margin: 50px 10px 10px 25px;
+  margin: 25px 10px 10px 25px;
   position: relative;
 }
 
 #future p{
-  flex: 1 1 25%;
-  margin: 50px 10px 10px 25px;
-  position: relative;
-  width: 20em;
-  height: 29em;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  width: 25em;
+  left: 18%;
   font-size: 2em;
   line-height: 1.4;
+  text-align: justify;
 }
 
 .overlay {
@@ -266,14 +283,14 @@ height: auto;
 }
 
 .ovrl-left {
-  width: 25em;
+  width: 30em;
   left: 50%;
   box-shadow: 9px 0px 19px 0px rgba(105, 109, 122, 1);
   border-left: 0.5px solid rgba(255, 255, 255, 0.8);
 }
 
 .ovrl-right {
-  width: 25em;
+  width: 30em;
   right: 50%;
   box-shadow: -9px 0px 19px 0px rgba(105, 109, 122, 1);
 }
@@ -331,7 +348,6 @@ animation-fill-mode: forwards;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   flex-direction: column;
   width: 500px;
   padding: 40px;
