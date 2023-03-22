@@ -1,6 +1,15 @@
+:root{
+  --accentColor: rgb(255, 200, 127);
+  --title: 'Sono', sans-serif;
+  --content:'Source Sans Pro', sans-serif;
+  --subtitle: 'Noto Sans Lao', sans-serif;
+
+}
+
 html{
   font-size:16px;
   color: white;
+  margin: 0 auto;
 }
 
 body{
@@ -9,8 +18,40 @@ body{
   padding-right: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
-  margin: 0;
 }
+
+
+h1{
+  font-size: 5.5em;
+  font-family: Var(--title);
+}
+
+h2{
+  font-size: 4em;
+  font-family: Var(--subtitle);
+}
+
+h3{
+  font-size: 3em;
+  font-family: Var(--title);
+}
+
+p{
+  font-size: 1.75em;
+  font-family: Var(--content);
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 nav ul{
   display: flex;
@@ -21,6 +62,7 @@ nav ul{
 
 nav li{
   list-style-type: none;
+  font-family: Var(--subtitle);
 }
 
 nav a{
@@ -30,29 +72,30 @@ nav a{
 }
 
 nav a:hover{
-  color:aquamarine;
+  color:Var(--accentColor);
 }
 
 /* about*/
 
 #about{
-  padding-top: 8em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   column-gap: 5em;
-  padding-bottom: 8em;
-  padding-left: 1em;
+  padding: 8em 15em 8em 15em;
 }
 
 
 .right{
   display: flex;
   flex-direction: column;
-  padding-right: 5em;
   text-align:left;
-  width: 30vw;
+  width: 33%;
+}
+
+.right p{
+  line-height: 1.8;
 }
 
 .icons{
@@ -65,9 +108,9 @@ nav a:hover{
 
 .box{
   height: auto;
-  width: 50vw;
   position: relative;
   text-align: center;
+  width: 66%;
 }
 
 .box img{
@@ -76,38 +119,23 @@ nav a:hover{
   object-fit: cover;
 }
 
-h1{
-  font-size: 3em;
-  color: white;
-}
-
-h2{
-  font-size: 1.5em;
-  color: white;
-}
-
 .right .icons a{
 color:white;
 }
 
 .right .icons a:hover{
-color:aquamarine;
+color:Var(--accentColor);
 }
 
-.right .icons a{
-  color:white;
-}
+/*parallax images*/
 
-.right .icons a:hover{
-  color:aquamarine;
-}
 
 .parallax-image {
   background-image: url("https://i.pinimg.com/736x/27/2d/80/272d80e97e0405abcae98443688b79b0.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,7 +147,7 @@ color:aquamarine;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,41 +155,43 @@ color:aquamarine;
 }
 
 .parallax-image3 {
-  background-image: url("https://a-static.besthdwallpaper.com/anime-sunrise-background-art-wallpaper-2048x1536-94301_26.jpg");
+  background-image: url("https://www.bhmpics.com/downloads/anime-apartment-Wallpapers/8.1027828.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* Projects*/
+/*PROJECTS*/
+
 #projects{
-background: linear-gradient(black 10%, 30%, aquamarine 90%, black);
+background: linear-gradient(black 10%, 30%, rgba(255, 146, 127, 0.644) 50%, black);
 display: flex;
 flex-flow:row wrap;
 justify-content: center;
 align-items: center;
-padding-top: 10em;
+padding-top: 5em;
 padding-bottom: 10em;
 }
 
 #projects h2{
-padding-left: 1em;
-font-size: 4em;
-padding-right: 1em;
 text-shadow: 2px 2px 4px black;
 }
 
-.phones{
+.phones {
 display: flex;
 flex-flow: row wrap;
 column-gap: 10px;
 width: 75vw;
-row-gap: 10px;
+row-gap: 20px;
+}
+
+#projects a{
+ padding-left: .7em;
 }
 
 .smartphone {
@@ -218,21 +248,118 @@ object-fit: cover;
 overflow: auto;
 }
 
+.content img{
+width: 12.5em;
+height: auto;
+}
+
+/*FUTURE*/
+
+#future{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8em;
+  flex-flow: column wrap;
+  padding-bottom: 20em;
+}
+
+#future h2, h3{
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.box2 {
+  margin: 25px 10px 10px 25px;
+  position: relative;
+}
+
+#future p{
+  position: relative;
+  align-self: center;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 2em;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.overlay {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  height: 34em;
+  z-index: 98;
+  background: url("https://images.pond5.com/red-curtain-animation-background-025751132_prevstill.jpeg");
+}
+
+.ovrl-left {
+  width: 30em;
+  left: 50%;
+  box-shadow: 9px 0px 19px 0px rgba(105, 109, 122, 1);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.8);
+}
+
+.ovrl-right {
+  width: 30em;
+  right: 50%;
+  box-shadow: -9px 0px 19px 0px rgba(105, 109, 122, 1);
+}
+
+.move-right {
+animation-name: myRight;
+animation-duration: 1.3s;
+animation-fill-mode: forwards;
+}
+
+.move-left {
+animation-name: myLeft;
+animation-duration: 1.3s;
+animation-fill-mode: forwards;
+}
+
+@keyframes myRight {
+  0% {
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: 80%;
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes myLeft {
+  0% {
+    right: 50%;
+    opacity: 1;
+  }
+  100% {
+    right: 80%;
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+
 /* Contact*/
 #contact{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(#141e30, #243b55);
+  background: linear-gradient(#301714, #552424);
   height: 45rem;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .login-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   flex-direction: column;
   width: 500px;
   padding: 40px;
@@ -284,7 +411,7 @@ overflow: auto;
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: aquamarine;
+  color: Var(--accentColor);
   font-size: 1em;
 }
 
@@ -292,7 +419,7 @@ overflow: auto;
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: aquamarine;
+  color: Var(--accentColor);
   font-size: 1.2em;
   text-decoration: none;
   text-transform: uppercase;
@@ -303,13 +430,13 @@ overflow: auto;
 }
 
 .login-box a:hover {
-  background: aquamarine;
+  background: Var(--accentColor);
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px aquamarine,
-              0 0 25px aquamarine,
-              0 0 50px aquamarine,
-              0 0 100px aquamarine;
+  box-shadow: 0 0 5px Var(--accentColor),
+              0 0 25px Var(--accentColor),
+              0 0 50px Var(--accentColor),
+              0 0 100px Var(--accentColor);
 }
 
 .login-box a span {
@@ -322,7 +449,7 @@ overflow: auto;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, aquamarine);
+  background: linear-gradient(90deg, transparent, Var(--accentColor));
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -340,7 +467,7 @@ overflow: auto;
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, aquamarine);
+  background: linear-gradient(180deg, transparent, Var(--accentColor));
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -359,7 +486,7 @@ overflow: auto;
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, aquamarine);
+  background: linear-gradient(270deg, transparent, Var(--accentColor));
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -378,7 +505,7 @@ overflow: auto;
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, aquamarine);
+  background: linear-gradient(360deg, transparent, Var(--accentColor));
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }
@@ -417,8 +544,9 @@ overflow: auto;
 }
 
 .contact-info a {
-  text-decoration: none;
-  color:aquamarine;
+text-decoration: none;
+color:Var(--accentColor);
+
 }
 
 .contact-info a:hover{
@@ -431,4 +559,280 @@ overflow: auto;
 
 .contact-info i{
   padding: 0 10px;
+}
+
+/*RESPONSIVE DESIGN*/
+@media only screen and (max-width: 515px){
+  html{
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 4em;
+  }
+  h2{
+    font-size: 3em;
+  }
+
+  nav{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    padding-right: 2em;
+  }
+
+  nav ul{
+    flex-direction: column;
+  }
+
+  nav a{
+    font-size: 1em;
+  }
+
+  #about{
+    flex-direction: column;
+    padding: 2em 2em 8em 2em;
+  }
+
+  .box{
+    width: 100%;
+  }
+  
+  
+  .right{
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    width: 100%;  
+  }
+
+  .right p{
+    line-height: 1.2;
+    text-align: center;
+  }
+  .icons{
+    gap: .75em;
+  }
+
+  #projects{
+    flex-flow:column wrap;
+  }
+
+  .phones {
+    flex-flow: column wrap;
+    column-gap: 10px;
+    width: 75vw;
+    row-gap: 40px;
+    }
+
+#projects a{
+ padding-left: 0;
+}
+
+.p2{
+  transform:  translate(0, 0);
+}
+
+.p3{
+  transform:  translate(0, 0);
+}
+
+.p5{
+transform:  translate(0, 0);
+}
+
+.p6{
+transform:  translate(0, 0);
+}
+
+
+
+.box2 {
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+
+#future p{
+  font-size: 1.3em;
+  width: 75%;
+}
+
+.overlay {
+  height: 38em;
+}
+
+#future  h3{
+ font-size:1.5em;
+}
+
+
+.ovrl-left {
+  width: 15em;
+}
+
+.ovrl-right {
+  width: 15em;
+}
+
+.login-box {
+  width: 300px;
+}
+
+#contact{
+  height: 55rem;
+}
+}
+
+@media only screen and (min-width: 516px) and (max-width: 900px){
+  html{
+    font-size: 15px;
+  }
+
+  h1{
+    font-size: 4em;
+  }
+  h2{
+    font-size: 3em;
+  }
+
+  nav{
+    justify-content: center;
+  }
+
+
+  #about{
+    padding: 2em 2em 8em 2em;
+  }
+
+  .box{
+    width: 60%;
+  }
+  
+  
+  .right{
+    width: 40%;
+  }
+  
+
+  .right p{
+    line-height: 1.2;
+  }
+  .icons{
+    gap: .75em;
+  }
+
+  #projects{
+    flex-flow:column wrap;
+  }
+
+  .phones {
+    flex-flow: column wrap;
+    column-gap: 10px;
+    width: 75vw;
+    row-gap: 40px;
+    }
+
+#projects a{
+ padding-left: 0;
+}
+
+.p2{
+  transform:  translate(0, 0);
+}
+
+.p3{
+  transform:  translate(0, 0);
+}
+
+.p5{
+transform:  translate(0, 0);
+}
+
+.p6{
+transform:  translate(0, 0);
+}
+
+.box2 {
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+
+#future p{
+  font-size: 1.3em;
+  width: 75%;
+}
+
+.overlay {
+  height: 30em;
+}
+
+#future  h3{
+ font-size:1.5em;
+}
+
+
+.ovrl-left {
+  width: 20em;
+}
+
+.ovrl-right {
+  width: 20em;
+}
+
+.login-box {
+  width: 400px;
+}
+
+#contact{
+  height: 55rem;
+}
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1439px){
+
+  #about{
+    padding: 2em 2em 8em 2em;
+  }
+
+  .icons{
+    gap: .75em;
+  }
+
+.box2 {
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+
+#future p{
+  font-size: 1.5em;
+  width: 75%;
+}
+
+.overlay {
+  height: 30em;
+}
+
+#future  h3{
+ font-size:1.5em;
+}
+
+
+.ovrl-left {
+  width: 25em;
+}
+
+.ovrl-right {
+  width: 25em;
+}
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1800px){
+.phones {
+ justify-content:center;
+ align-content: center;
+  column-gap: 10px;
+  width: 75vw;
+  row-gap: 40px;
+  }
 }
