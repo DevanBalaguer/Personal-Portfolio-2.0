@@ -1,26 +1,22 @@
-body {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
+body{  
+  opacity: 0;
+  transition: opacity .5s;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url("https://wallpaperwaifu.com/wp-content/uploads/2019/11/cozy-autumn-rain-thumb-1500x844.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  top:0;  
+  left:0;
 
-.zoom{  
-    background-image: url("https://wallpaperwaifu.com/wp-content/uploads/2019/11/cozy-autumn-rain-thumb-1500x844.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:100vh;  
-    width:100%;  
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-    top:0;  
-    left:0;
 }
-
 
 h1, h2{
     color: white;
@@ -28,10 +24,9 @@ h1, h2{
     opacity: 1;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+button{
+  background: transparent;
+  border-radius: 5px;
+  backdrop-filter: blur(8px);
 }
 
-
- 
