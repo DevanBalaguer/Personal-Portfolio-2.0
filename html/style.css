@@ -277,7 +277,7 @@ height: auto;
 #future p{
   position: relative;
   align-self: center;
-  width: 50%;
+  width: 39%;
   margin: 0 auto;
   font-size: 2em;
   line-height: 1.4;
@@ -803,9 +803,17 @@ transform:  translate(0, 0);
   position: relative;
 }
 
+.phones {
+ justify-content:center;
+ align-content: center;
+  column-gap: 10px;
+  width: 75vw;
+  row-gap: 40px;
+  }
+
 #future p{
   font-size: 1.5em;
-  width: 75%;
+  width: 60%;
 }
 
 .overlay {
