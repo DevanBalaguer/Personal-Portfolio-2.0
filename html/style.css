@@ -1,5 +1,9 @@
 :root{
   --accentColor: rgb(255, 200, 127);
+  --title: 'Sono', sans-serif;
+  --content:'Source Sans Pro', sans-serif;
+  --subtitle: 'Noto Sans Lao', sans-serif;
+
 }
 
 
@@ -19,25 +23,29 @@ body{
 
 h1{
   font-size: 5.5em;
+  font-family: Var(--title);
 }
 
 h2{
   font-size: 4em;
+  font-family: Var(--subtitle);
 }
 
 h3{
   font-size: 3em;
+  font-family: Var(--title);
 }
 
 p{
-  font-size: 2em;
+  font-size: 1.75em;
+  font-family: Var(--content);
 }
 
 .reveal{
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 1.5s all ease;
 }
 .reveal.active{
   transform: translateY(0);
@@ -54,6 +62,7 @@ nav ul{
 
 nav li{
   list-style-type: none;
+  font-family: Var(--subtitle);
 }
 
 nav a{
@@ -86,6 +95,10 @@ nav a:hover{
   padding-right: 5em;
   text-align:left;
   width: 30vw;
+}
+
+.right p{
+  line-height: 1.8;
 }
 
 .icons{
@@ -267,7 +280,7 @@ height: auto;
   margin: 0;
   top: 0;
   width: 25em;
-  left: 18%;
+  left: 30%;
   font-size: 2em;
   line-height: 1.4;
   text-align: justify;

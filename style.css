@@ -22,11 +22,43 @@ h1, h2{
     color: white;
     text-shadow: 1px 1px #000000; 
     opacity: 1;
+    font-family: 'Sono', sans-serif;
 }
-
 button{
   background: transparent;
   border-radius: 5px;
   backdrop-filter: blur(8px);
 }
 
+@keyframes bob-on-hover {
+  0% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes bob-on-hover-float {
+  100% {
+    transform: translateY(-8px);
+  }
+}
+.bob-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.bob-on-hover:hover, .bob-on-hover:focus, .bob-on-hover:active {
+  animation-name: bob-on-hover-float, bob-on-hover;
+  animation-duration: .3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
