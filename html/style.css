@@ -1,0 +1,851 @@
+:root{
+  --accentColor: rgb(255, 200, 127);
+  --title: 'Sono', sans-serif;
+  --content:'Source Sans Pro', sans-serif;
+  --subtitle: 'Noto Sans Lao', sans-serif;
+
+}
+
+html{
+  font-size:16px;
+  color: white;
+  margin: 0 auto;
+}
+
+body{
+  background-color: black;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+h1{
+  font-size: 5.5em;
+  font-family: Var(--title);
+}
+
+h2{
+  font-size: 4em;
+  font-family: Var(--subtitle);
+}
+
+h3{
+  font-size: 3em;
+  font-family: Var(--title);
+}
+
+p{
+  font-size: 1.75em;
+  font-family: Var(--content);
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+nav li{
+  list-style-type: none;
+  font-family: Var(--subtitle);
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+nav a:hover{
+  color:Var(--accentColor);
+}
+
+/* about*/
+
+#about{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5em;
+  padding: 8em 15em 8em 15em;
+}
+
+
+.right{
+  display: flex;
+  flex-direction: column;
+  text-align:left;
+  width: 33%;
+}
+
+.right p{
+  line-height: 1.8;
+}
+
+.icons{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3em;
+}
+
+.box{
+  height: auto;
+  position: relative;
+  text-align: center;
+  width: 66%;
+}
+
+.box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right .icons a{
+color:white;
+}
+
+.right .icons a:hover{
+color:Var(--accentColor);
+}
+
+/*parallax images*/
+
+.parallax-image {
+  background-image: url("https://i.pinimg.com/736x/27/2d/80/272d80e97e0405abcae98443688b79b0.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-image2 {
+  background-image: url("https://images.unsplash.com/photo-1519638399535-1b036603ac77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWV8ZW58MHx8MHx8&w=1000&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.parallax-image3 {
+  background-image: url("https://www.bhmpics.com/downloads/anime-apartment-Wallpapers/8.1027828.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*PROJECTS*/
+
+#projects{
+background: linear-gradient(black 10%, 30%, rgba(255, 146, 127, 0.644) 50%, black);
+display: flex;
+flex-flow:row wrap;
+justify-content: center;
+align-items: center;
+padding-top: 5em;
+padding-bottom: 10em;
+}
+
+#projects h2{
+text-shadow: 2px 2px 4px black;
+}
+
+.phones {
+display: flex;
+flex-flow: row wrap;
+column-gap: 10px;
+width: 75vw;
+row-gap: 20px;
+}
+
+#projects a{
+ padding-left: .7em;
+}
+
+.smartphone {
+position: relative;
+width: 12.5em;
+height: 24em;
+margin: auto;
+border: 10px black solid;
+border-top-width: 30px;
+border-bottom-width: 52px;
+border-radius: 20px;
+box-shadow: 15px 20px 20px -4px black
+
+}
+
+.smartphone:before {
+content: '';
+display: block;
+width: 60px;
+height: 5px;
+position: absolute;
+top: -15px;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #333;
+border-radius: 10px;
+}
+
+.p2{
+  transform:  translate(0, 50px);
+}
+
+.p3{
+  transform:  translate(0, -50px);
+}
+
+.p5{
+transform:  translate(0, 50px);
+}
+
+.p6{
+transform:  translate(0, -50px);
+}
+
+/* The screen (or content) of the device */
+
+.phone-screen{
+width: 12.5em;
+height: 25.5em;
+}
+
+.content {
+object-fit: cover;
+overflow: auto;
+}
+
+.content img{
+width: 12.5em;
+height: auto;
+}
+
+/*FUTURE*/
+
+#future{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8em;
+  flex-flow: column wrap;
+  padding-bottom: 20em;
+}
+
+#future h2, h3{
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.box2 {
+  margin: 25px 10px 10px 25px;
+  position: relative;
+}
+
+#future p{
+  position: relative;
+  align-self: center;
+  width: 39%;
+  margin: 0 auto;
+  font-size: 2em;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.overlay {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  height: 34em;
+  z-index: 98;
+  background: url("https://images.pond5.com/red-curtain-animation-background-025751132_prevstill.jpeg");
+}
+
+.ovrl-left {
+  width: 30em;
+  left: 50%;
+  box-shadow: 9px 0px 19px 0px rgba(105, 109, 122, 1);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.8);
+}
+
+.ovrl-right {
+  width: 30em;
+  right: 50%;
+  box-shadow: -9px 0px 19px 0px rgba(105, 109, 122, 1);
+}
+
+.move-right {
+animation-name: myRight;
+animation-duration: 1.3s;
+animation-fill-mode: forwards;
+}
+
+.move-left {
+animation-name: myLeft;
+animation-duration: 1.3s;
+animation-fill-mode: forwards;
+}
+
+@keyframes myRight {
+  0% {
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: 80%;
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes myLeft {
+  0% {
+    right: 50%;
+    opacity: 1;
+  }
+  100% {
+    right: 80%;
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+/* Contact*/
+#contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#301714, #552424);
+  height: 45rem;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  padding: 40px;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+ 
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 5px 0;
+  font-size: 1.2em;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box textarea{
+  margin-top: 12px;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: Var(--accentColor);
+  font-size: 1em;
+}
+
+.login-box form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: Var(--accentColor);
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.login-box button:hover {
+  background: Var(--accentColor);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px Var(--accentColor),
+              0 0 25px Var(--accentColor),
+              0 0 50px Var(--accentColor),
+              0 0 100px Var(--accentColor);
+}
+
+.login-box button span {
+  position: absolute;
+  display: block;
+}
+
+.login-box button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, Var(--accentColor));
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, Var(--accentColor));
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, Var(--accentColor));
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, Var(--accentColor));
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+/* footer*/
+.contact-info{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+
+.contact-info h3{
+padding-top: 20px;
+font-size: 1.3em;
+margin: 0;
+}
+
+.contact-info ul{
+list-style: none;
+padding: 5px 0;
+font-size: 1em;
+}
+
+.contact-info li{
+padding: 5px 0;
+}
+
+.contact-info a {
+text-decoration: none;
+color:Var(--accentColor);
+}
+
+.contact-info a:hover{
+color: white;
+}
+
+.contact-info .icons{
+font-size: 2em;
+}
+
+.contact-info i{
+padding: 0 10px;
+}
+
+/*RESPONSIVE DESIGN*/
+@media only screen and (max-width: 515px){
+  html{
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 4em;
+  }
+  h2{
+    font-size: 3em;
+  }
+
+  nav{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    padding-right: 2em;
+  }
+
+  nav ul{
+    flex-direction: column;
+  }
+
+  nav a{
+    font-size: 1em;
+  }
+
+  #about{
+    flex-direction: column;
+    padding: 2em 2em 8em 2em;
+  }
+
+  .box{
+    width: 100%;
+  }
+  
+  
+  .right{
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    width: 100%;  
+  }
+
+  .right p{
+    line-height: 1.2;
+    text-align: center;
+  }
+  .icons{
+    gap: .75em;
+  }
+
+  #projects{
+    flex-flow:column wrap;
+  }
+
+  .phones {
+    flex-flow: column wrap;
+    column-gap: 10px;
+    width: 75vw;
+    row-gap: 40px;
+    }
+
+#projects a{
+ padding-left: 0;
+}
+
+.p2{
+  transform:  translate(0, 0);
+}
+
+.p3{
+  transform:  translate(0, 0);
+}
+
+.p5{
+transform:  translate(0, 0);
+}
+
+.p6{
+transform:  translate(0, 0);
+}
+
+
+
+.box2 {
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+
+#future p{
+  font-size: 1.3em;
+  width: 75%;
+}
+
+.overlay {
+  height: 38em;
+}
+
+#future  h3{
+ font-size:1.5em;
+}
+
+
+.ovrl-left {
+  width: 15em;
+}
+
+.ovrl-right {
+  width: 15em;
+}
+
+.login-box {
+  width: 300px;
+}
+
+#contact{
+  height: 55rem;
+}
+}
+
+@media only screen and (min-width: 516px) and (max-width: 900px){
+  html{
+    font-size: 15px;
+  }
+
+  h1{
+    font-size: 4em;
+  }
+  h2{
+    font-size: 3em;
+  }
+
+  nav{
+    justify-content: center;
+  }
+
+
+  #about{
+    padding: 2em 2em 8em 2em;
+  }
+
+  .box{
+    width: 60%;
+  }
+  
+  
+  .right{
+    width: 40%;
+  }
+  
+
+  .right p{
+    line-height: 1.2;
+  }
+  .icons{
+    gap: .75em;
+  }
+
+  #projects{
+    flex-flow:column wrap;
+  }
+
+  .phones {
+    flex-flow: column wrap;
+    column-gap: 10px;
+    width: 75vw;
+    row-gap: 40px;
+    }
+
+#projects a{
+ padding-left: 0;
+}
+
+.p2{
+  transform:  translate(0, 0);
+}
+
+.p3{
+  transform:  translate(0, 0);
+}
+
+.p5{
+transform:  translate(0, 0);
+}
+
+.p6{
+transform:  translate(0, 0);
+}
+
+.box2 {
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+
+#future p{
+  font-size: 1.3em;
+  width: 75%;
+}
+
+.overlay {
+  height: 30em;
+}
+
+#future  h3{
+ font-size:1.5em;
+}
+
+
+.ovrl-left {
+  width: 20em;
+}
+
+.ovrl-right {
+  width: 20em;
+}
+
+.login-box {
+  width: 400px;
+}
+
+#contact{
+  height: 55rem;
+}
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1439px){
+
+  #about{
+    padding: 2em 2em 8em 2em;
+  }
+
+  .icons{
+    gap: .75em;
+  }
+
+.box2 {
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+
+.phones {
+ justify-content:center;
+ align-content: center;
+  column-gap: 10px;
+  width: 75vw;
+  row-gap: 40px;
+  }
+
+#future p{
+  font-size: 1.5em;
+  width: 60%;
+}
+
+.overlay {
+  height: 30em;
+}
+
+#future  h3{
+ font-size:1.5em;
+}
+
+
+.ovrl-left {
+  width: 25em;
+}
+
+.ovrl-right {
+  width: 25em;
+}
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1800px){
+.phones {
+ justify-content:center;
+ align-content: center;
+  column-gap: 10px;
+  width: 75vw;
+  row-gap: 40px;
+  }
+}
